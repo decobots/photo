@@ -14,21 +14,19 @@ function init(){
      document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
-	alert("hello");
+//	alert("hello");
     	document.getElementById("photoBut").onclick=photo;
 }
 function photo(){
+
 	
-//	alert(navigator.camera.getPicture);
-	
-//	navigator.camera.getPicture(cameraSuccess, cameraError);//, cameraOptions);
-	alert("platform"+device.platform+"!");
-//	alert(device.platform);
+	navigator.camera.getPicture(cameraSuccess, cameraError);//, cameraOptions);
+
 }
 function cameraSuccess(imageData){
-	alert("ok");
-//	var image = document.getElementById('photoImg');
-//	image.src = "data:image/jpeg;base64," + imageData;
+//	alert("ok");
+	var image = document.getElementById('photoImg');
+	image.src = "data:image/jpeg;base64," + imageData;
 }
 
 function cameraError(error){
