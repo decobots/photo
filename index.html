@@ -14,7 +14,7 @@ function init(){
      document.addEventListener("deviceready", onDeviceReady, false);
 }
 function onDeviceReady(){
-//	alert("hello");
+	alert("hello");
     	document.getElementById("photoBut").onclick=photo;
 }
 function photo(){
@@ -24,7 +24,7 @@ function photo(){
 
 }
 function cameraSuccess(imageData){
-//	alert("ok");
+	alert("ok");
 	var image = document.getElementById('photoImg');
 	image.src = "data:image/jpeg;base64," + imageData;
 }
