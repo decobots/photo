@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Hello</name>
+    <name>Photo</name>
 
     <description>
-       First app. 
+       Second app. 
     </description>
 
     <author href="https://my.adress.com" email="support@hello.com">
