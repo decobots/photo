@@ -25,6 +25,8 @@ function photo(){
 			encodingType: Camera.EncodingType.JPEG,
 			targetWidth: 100,
 			targetHeight: 100,
+			correctOrientation:true,
+			cameraDirection: Camera.Direction.FRONT,
 			saveToPhotoAlbum: false };
 	navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
 
